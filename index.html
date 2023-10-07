@@ -15,32 +15,44 @@
     <title>product preview card</title>
   </head>
   <body>
-    <div class="container">
-      <div class="even-col cover-img" role="product image">
-      <img  class="img-mobile"src="./images/image-product-mobile.jpg" alt=""/>
-      <img  class="img-desktop"src="./images/image-product-desktop.jpg" alt=""/>
-       
-      </div>
-      <div class="even-col info" role="product preview">
-        <div role="product info">
-            <p class="text-upper">perfume</p>
-            <h1>Gabrielle essence eau de parfum</h1>
-            <p>
-              A floral, solar and voluptuous interpretation composed by
-              <span class="cap"> oliver ploge, perfumer-creator </span>
-              for the House of <span class="text-upper">chanel</span>
-              
-            </p>
-            <div class="price"  role="product price">
-                <p class="current-price">$149.99 </p> <p class="old-price"> $169.99</p> 
-            </div>
+    <main >
 
+<article class="product-card">
+  <picture>
+    <source media="(max-width:650px)" srcset="./images/image-product-mobile.jpg"/>
+    <source media="(min-width:650px)" srcset="./images/image-product-desktop.jpg"/>
+    <img src="./images/image-product-desktop.jpg" alt="Gabrielle Chanel perfume" class="product__img"/>
+  </picture>
+
+  <div class="product__info" >
+
+        <p class="text-upper">perfume</p>
+        <h1 class="heading-primary">Gabrielle essence eau de parfum</h1>
+        <p class="txt">
+          A floral, solar and voluptuous interpretation composed by
+          <span class="txt-cap"> oliver ploge, perfumer-creator </span>
+          for the House of <span class="txt-upper">chanel</span>
+          
+        </p>
+        <div class="price">
+            <p class="current-price">$149.99 </p> <del class="old-price"> $169.99</del> 
         </div>
-       
-      
-        <button class="btn" > <i class="far fa-shopping-cart"></i>add to cart</button>
-      </div>
 
-    </div>
+   
+   
+  
+    <button class="btn" >
+      <svg
+      aria-hidden="true"
+       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+      </svg>
+      add to cart</button>
+  </div>
+
+</article>
+    
+
+    </main>
   </body>
 </html>
