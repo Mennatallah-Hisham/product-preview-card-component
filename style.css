@@ -1,0 +1,166 @@
+
+:root{
+    --fs-body:14px;
+    --clr-cream:hsl(30, 38%, 92%);
+    --clr-cyan-600:hsl(158, 36%, 37%);
+
+    --clr-grayish-blue-600:hsl(228, 12%, 48%);
+    --clr-blue-900:hsl(212, 21%, 14%);
+    --fw-bold:700;
+    --fw-regular:500;
+    --ff-body:'Montserrat', sans-serif;
+    --ff-title:'Fraunces', sans-serif;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font:inherit;
+    line-height: 1.6em;
+
+}
+body{
+    background-color: var(--clr-cream);
+
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width:330px;
+    min-width:330px;
+  
+    padding-bottom: 1em;
+    background-color: white;
+
+}
+
+   
+   
+img{
+    max-width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.img-desktop{
+    display: none;
+}
+
+.info{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+    border-radius:20px;
+    padding:1em;
+}
+h1{
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    color:var(--clr-blue-900);
+    font-size: 22px;
+    width:80%;
+    text-transform: capitalize;
+    line-height: 1em;
+    margin:1em 0;
+    
+
+}
+
+p{
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    color:var(--clr-grayish-blue-600);
+    margin:1em 0;
+
+}
+
+.btn{
+    text-transform:capitalize;
+    font-size:0.7rem;
+    color:white;
+    background-color: var(--clr-cyan-600);
+    border:none;
+    width:70%;
+    padding:0.3em 0;
+    border-radius: 5px;
+    margin:0.5em 0;
+  
+
+
+    
+}
+.cap{
+    text-transform: capitalize;
+}
+.text-upper{
+    text-transform:uppercase;
+}
+.price{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   
+
+
+}
+.current-price{
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    color:var(--clr-cyan-600);
+    font-size: 22px;
+}
+.old-price{
+    font-size: 12px;
+    text-decoration: line-through;
+    color:var(--clr-grayish-blue-600)
+}
+
+@media (min-width:900px) {
+    .container{
+        display: flex;
+        max-width:80%;
+       border-radius: 20px;
+       justify-content: center;
+       align-items: center;
+       padding-bottom:0;
+    }
+    .img-mobile{
+        display: none;
+    }
+    .img-desktop{
+        display: block;
+    }
+      
+img{
+    max-width:100%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+
+}
+    .info{
+        padding:1em 0.5em;
+   
+    }
+
+    p{
+        margin: 0.5em 0;
+        font-size: 12px;
+    }
+    h1{
+        margin:0.5em 0;
+        
+    }
+    .btn{
+        margin:0.2em 0;
+    }
+}
